@@ -1,0 +1,28 @@
+{
+    "name": "@tzyito/skills",
+    "version": "1.0.0",
+    "description": "Quickly install Cursor AI skills into your project via npx",
+    "type": "module",
+    "bin": {
+        "skills": "./bin/cli.mjs"
+    },
+    "files": [
+        "bin"
+    ],
+    "keywords": [
+        "cursor",
+        "skills",
+        "ai",
+        "rules",
+        "cli"
+    ],
+    "author": "tzyito",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tzyito/Skills.git"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}

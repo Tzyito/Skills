@@ -1,0 +1,7 @@
+# Only publish the bin/ directory and package.json
+# All skill directories are fetched from GitHub at runtime
+*
+!bin/
+!bin/**
+!package.json
+!LICENSE
