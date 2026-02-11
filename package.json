@@ -1,7 +1,7 @@
 {
     "name": "@tzyito/skills",
     "version": "1.0.0",
-    "description": "Quickly install Cursor AI skills into your project via npx",
+    "description": "Quickly install AI skills into your project via npx",
     "type": "module",
     "bin": {
         "skills": "./bin/cli.mjs"
@@ -10,6 +10,7 @@
         "bin"
     ],
     "keywords": [
+        "claude code",
         "cursor",
         "skills",
         "ai",
