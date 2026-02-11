@@ -447,7 +447,11 @@ async function selectSkillsInteractive(skills) {
 // ─── Install ─────────────────────────────────────────────────────────────────
 
 async function installSkill(skill, targetDir) {
-    const targetPath = join(targetDir, `${skill.name}.md`);
+    // Preserve original directory structure: <skillDir>/<name>/SKILL.md
+    const skillFolder = join(targetDir, skill.name);
+    const targetPath = join(skillFolder, "SKILL.md");
+
+    await mkdir(skillFolder, { recursive: true });
 
     if (existsSync(targetPath)) {
         const existing = await readFile(targetPath, "utf-8");
@@ -462,7 +466,7 @@ async function installSkill(skill, targetDir) {
 
     await writeFile(targetPath, skill.raw, "utf-8");
     log.success(
-        `${c.bold}${skill.name}${c.reset} → ${c.dim}${targetPath}${c.reset}`
+        `${c.bold}${skill.name}${c.reset} → ${c.dim}${skill.name}/SKILL.md${c.reset}`
     );
 }
 

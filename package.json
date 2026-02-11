@@ -1,6 +1,6 @@
 {
     "name": "@tzyito/skills",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Quickly install AI skills into your project via npx",
     "type": "module",
     "bin": {
